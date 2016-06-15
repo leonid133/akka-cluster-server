@@ -1,0 +1,33 @@
+[0m[[0minfo[0m] [0mPackaging /home/lblokhin/cluster/server-node/target/scala-2.11/server-node_2.11-0.0.1.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	io/hydrosphere/mist/ClusterListener$$anonfun$receive$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/lblokhin/cluster/server-node/target/scala-2.11/classes/io/hydrosphere/mist/ClusterListener$$anonfun$receive$1.class[0m
+[0m[[0mdebug[0m] [0m	io/hydrosphere/mist/ServerNode.class[0m
+[0m[[0mdebug[0m] [0m	  /home/lblokhin/cluster/server-node/target/scala-2.11/classes/io/hydrosphere/mist/ServerNode.class[0m
+[0m[[0mdebug[0m] [0m	io/hydrosphere/mist/package$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/lblokhin/cluster/server-node/target/scala-2.11/classes/io/hydrosphere/mist/package$.class[0m
+[0m[[0mdebug[0m] [0m	io/hydrosphere/mist/Message$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/lblokhin/cluster/server-node/target/scala-2.11/classes/io/hydrosphere/mist/Message$.class[0m
+[0m[[0mdebug[0m] [0m	application.conf[0m
+[0m[[0mdebug[0m] [0m	  /home/lblokhin/cluster/server-node/target/scala-2.11/classes/application.conf[0m
+[0m[[0mdebug[0m] [0m	io/hydrosphere/mist/Tick$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/lblokhin/cluster/server-node/target/scala-2.11/classes/io/hydrosphere/mist/Tick$.class[0m
+[0m[[0mdebug[0m] [0m	io/hydrosphere/mist/ClusterListener.class[0m
+[0m[[0mdebug[0m] [0m	  /home/lblokhin/cluster/server-node/target/scala-2.11/classes/io/hydrosphere/mist/ClusterListener.class[0m
+[0m[[0mdebug[0m] [0m	io/hydrosphere[0m
+[0m[[0mdebug[0m] [0m	  /home/lblokhin/cluster/server-node/target/scala-2.11/classes/io/hydrosphere[0m
+[0m[[0mdebug[0m] [0m	io[0m
+[0m[[0mdebug[0m] [0m	  /home/lblokhin/cluster/server-node/target/scala-2.11/classes/io[0m
+[0m[[0mdebug[0m] [0m	io/hydrosphere/mist/package.class[0m
+[0m[[0mdebug[0m] [0m	  /home/lblokhin/cluster/server-node/target/scala-2.11/classes/io/hydrosphere/mist/package.class[0m
+[0m[[0mdebug[0m] [0m	io/hydrosphere/mist/Tick.class[0m
+[0m[[0mdebug[0m] [0m	  /home/lblokhin/cluster/server-node/target/scala-2.11/classes/io/hydrosphere/mist/Tick.class[0m
+[0m[[0mdebug[0m] [0m	io/hydrosphere/mist/Message.class[0m
+[0m[[0mdebug[0m] [0m	  /home/lblokhin/cluster/server-node/target/scala-2.11/classes/io/hydrosphere/mist/Message.class[0m
+[0m[[0mdebug[0m] [0m	io/hydrosphere/mist/ServerNode$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/lblokhin/cluster/server-node/target/scala-2.11/classes/io/hydrosphere/mist/ServerNode$.class[0m
+[0m[[0mdebug[0m] [0m	io/hydrosphere/mist/ServerNode$delayedInit$body.class[0m
+[0m[[0mdebug[0m] [0m	  /home/lblokhin/cluster/server-node/target/scala-2.11/classes/io/hydrosphere/mist/ServerNode$delayedInit$body.class[0m
+[0m[[0mdebug[0m] [0m	io/hydrosphere/mist[0m
+[0m[[0mdebug[0m] [0m	  /home/lblokhin/cluster/server-node/target/scala-2.11/classes/io/hydrosphere/mist[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
