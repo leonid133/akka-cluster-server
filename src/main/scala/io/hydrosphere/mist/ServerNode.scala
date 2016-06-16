@@ -59,6 +59,7 @@ class ClusterListener extends Actor with ActorLogging {
     case Tick => {
       scheduler.scheduleOnce(5.seconds, self, Tick)
       //start New work Node
+
       println("start node")
       val thread = new Thread {
         override def run {
