@@ -7,6 +7,9 @@ import akka.actor._
 import akka.cluster.ClusterEvent._
 import akka.cluster._
 import akka.event._
+import akka.actor.{Address, AddressFromURIString, Deploy, Props}
+import akka.remote.RemoteScope
+
 
 //import scala.sys.process.Process
 
@@ -14,6 +17,8 @@ import akka.event._
 import sys.process._
 
 import scala.concurrent.duration._
+
+import akka.pattern.ask
 
 
 case object Tick
@@ -51,7 +56,17 @@ class ClusterListener extends Actor with ActorLogging {
           if (addr != myAddress.toString)
           cluster.system.actorSelection (addr + "/user/clusterMist") ! new Message (myAddress.toString, "Im Leader")
           cluster.system.actorSelection (addr + "/user/clusterMist") ! new Message (myAddress.toString, s"Now you node number #${nodeCounter}")
+          val Adress = AddressFromURIString(addr)
+          val refSparkContext = cluster.system.actorOf(Props[ContextManager].
+            withDeploy(Deploy(scope = RemoteScope(AddressFromURIString(addr + "/user/clusterMist")))))
+
           nodeCounter += 1
+
+          val contextFuture = refSparkContext ? new Message(myAddress.toString, "Hey. Wats up men?")
+          contextFuture
+            .onSuccess{
+              case msg => println(msg)
+            }
         }
         case _ => println(addr, msg)
       }
@@ -59,7 +74,7 @@ class ClusterListener extends Actor with ActorLogging {
     case Tick => {
       scheduler.scheduleOnce(5.seconds, self, Tick)
       //start New work Node
-
+/*
       println("start node")
       val thread = new Thread {
         override def run {
@@ -67,7 +82,7 @@ class ClusterListener extends Actor with ActorLogging {
         }
       }
       thread.start
-
+*/
     }
 
     case MemberUp(member) => {
